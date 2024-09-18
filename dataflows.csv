@@ -1,0 +1,164 @@
+ID,Name,Description
+BRAZIL_CO,Brazil Country Office,N/A
+BRAZIL_CO_SELO,Brazil SELO,N/A
+CAP2030,CAP 2030,N/A
+CD2030,Coundown 2030,This dataset is used to support the downolad of the CD2030 data
+CDCOV,Countdown - coverage indicators,N/A
+CDDEM,Countdown - demographic indicators,N/A
+CDDRIVER,Countdown - drivers indicators,N/A
+CDEQUIPLOT,Countdown - coverage - equiplot data,N/A
+CDT2,Countdown - tier 2 indicators,N/A
+CONSOLIDATED,CD2030 All,N/A
+DF_EAPRO_CROSS_SECTOR,EAPRO Cross Sector Indicators,A dataflow based on a subset of the global cross-sector indicators.
+TRANSMONEE,ECARO for TransMonEE,N/A
+DF_SDG_GLC,SDG Country Global Dataflow,Reporting and dissemination dataflow for non-harmonized global SDG indicators reported by countries.
+DF_SDG_GLH,SDG Harmonized Global Dataflow,Reporting and dissemination dataflow for harmonized global SDG indicators.
+MALAWI_CO,Malawi Country Office,N/A
+MALAWI_CO_DRAFT,[DRAFT] Malawi CO,N/A
+EDU,MENARO Education,N/A
+MENARO,UNICEF Middle East and North Africa,N/A
+PARAGUAY,Paraguay,N/A
+PAKISTAN_CO,Pakistan Survey Data,N/A
+CRBA,Children’s Rights and Business Atlas,N/A
+ROSA,UNICEF South Asia,N/A
+UIS_EDU,UNESCO UIS Education,includes Spring 2022 update
+EDU_NON_FINANCE,Education: Students and Teachers,N/A
+SDG4,Sustainable Development Goal 4,N/A
+UIS,UNESCO UIS,N/A
+CAUSE_OF_DEATH,Cause of death,N/A
+CCRI,Children’s Climate and Environment Risk Index,Children’s Climate and Environment Risk Index (CCRI)
+CHILD_RELATED_SDG,Child-related SDGs 2020,N/A
+CHLD_PVTY,Child Poverty,N/A
+CME,Child Mortality,N/A
+CME_CAUSE_OF_DEATH,CME Cause of death,CME Causes of death. Data source is JHU.
+CME_COUNTRY_PROFILES_DATA,CME Country profiles data,N/A
+CME_DF_2021_WQ,IGME Child Mortality Estimates wq,N/A
+CME_SUBNAT_AGO,CME Angola,N/A
+CME_SUBNAT_BDI,CME Burundi,N/A
+CME_SUBNAT_BEN,CME Benin,N/A
+CME_SUBNAT_BGD,CME Bangladesh,N/A
+CME_SUBNAT_CMR,CME Cameroon,N/A
+CME_SUBNAT_ETH,CME Ethiopia,N/A
+CME_SUBNAT_GHA,CME Ghana,N/A
+CME_SUBNAT_GIN,CME Guinea,N/A
+CME_SUBNAT_HTI,CME Haiti,N/A
+CME_SUBNAT_KEN,CME Kenya,N/A
+CME_SUBNAT_LAO,CME Lao,N/A
+CME_SUBNAT_LBR,CME Liberia,N/A
+CME_SUBNAT_LSO,CME Lesotho,N/A
+CME_SUBNAT_MDG,CME Madagascar,N/A
+CME_SUBNAT_MLI,CME Mali,N/A
+CME_SUBNAT_MMR,CME Myanmar,N/A
+CME_SUBNAT_MRT,CME Mauritania,N/A
+CME_SUBNAT_MWI,CME Malawi,N/A
+CME_SUBNAT_NAM,CME Namibia,N/A
+CME_SUBNAT_NGA,CME Nigeria,N/A
+CME_SUBNAT_NPL,CME Nepal,N/A
+CME_SUBNAT_PAK,CME Pakistan,N/A
+CME_SUBNAT_RWA,CME Rwanda,N/A
+CME_SUBNAT_SEN,CME Senegal,N/A
+CME_SUBNAT_SLE,CME Sierra Leone,N/A
+CME_SUBNAT_TCD,CME Chad,N/A
+CME_SUBNAT_TGO,CME Togo,N/A
+CME_SUBNAT_TZA,CME Tanzania,N/A
+CME_SUBNAT_UGA,CME Uganda,N/A
+CME_SUBNAT_ZMB,CME Zambia,N/A
+CME_SUBNAT_ZWE,CME Zimbabwe,N/A
+COVID,COVID-19 Baseline Indicators April 2020,N/A
+COVID_CASES,Covid cases and deaths,N/A
+DM,Demography,N/A
+DM_PROJECTIONS,Projection Demography,N/A
+ECD,Early Childhood Development,N/A
+ECONOMIC,Economic,N/A
+EDUCATION,Education,N/A
+FUNCTIONAL_DIFF,Functional difficulties,N/A
+GENDER,Gender,N/A
+GLOBAL_DATAFLOW,Cross-sector indicators,N/A
+HIV_AIDS,HIV/AIDS,N/A
+IMMUNISATION,Immunisation,N/A
+MG,Migration,N/A
+MNCH,"Maternal, child and newborn health",N/A
+NUTRITION,Nutrition,N/A
+PT,Child Protection,N/A
+PT_CM,Child Marriage,N/A
+PT_CONFLICT,Children Exposed to Conflict,N/A
+PT_FGM,Child Protection FGM,N/A
+SDG_PROG_ASSESSMENT,SDG Progress assessment,N/A
+SOC_PROTECTION,Social protection,N/A
+WASH_HEALTHCARE_FACILITY,WASH Healthcare Facility,N/A
+WASH_HOUSEHOLDS,WASH Households,N/A
+WASH_HOUSEHOLD_MH,WASH Household Menstrual Health,N/A
+WASH_HOUSEHOLD_SUBNAT,WASH Household subnational,N/A
+WASH_SCHOOLS,WASH Schools,N/A
+WT,Transition to Work,N/A
+AFG_CO,Afghanistan CO,N/A
+CCRI_DRM_KHM,Cambodia Children’s Climate and Disaster Risk Subnational Index,Cambodia Children’s Climate Risk Index and Disaster Risk Model Scores (CCRI-DRM Subnational Scores)
+CCRI_DRM_KHM_RAW,Cambodia Children’s Climate and Disaster Risk Subnational Indicators,Cambodia Children’s Climate Risk Index and Disaster Risk Model Indicators (CCRI-DRM Subnational Indicators Data)
+CCRI_DRM_KEN,Kenya Children’s Climate and Disaster Risk Subnational Index,Kenya Children’s Climate Risk Index and Disaster Risk Model Scores (CCRI-DRM Subnational Scores)
+CCRI_DRM_KEN_RAW,Kenya Children’s Climate and Disaster Risk Subnational Indicators,Kenya Children’s Climate Risk Index and Disaster Risk Model Indicators (CCRI-DRM Subnational Indicators Data)
+KENYA_CO,Kenya CO,N/A
+DF_SITREP_COVID19,UNICEF Situation Reports for COVID19,N/A
+CME_HISTORICAL,CME historical values,N/A
+DF_EMOPS_SAM,Severe acute malnutrition,Number of children 6-59 months admitted for TREATMENT OF SEVERE ACUTE MALNUTRITION (SAM)
+CME_SUBNATIONAL_DRAFT,CME Subnational draft,N/A
+CME_SUBNAT_AGO_DRAFT,CME Angola Draft,N/A
+CME_SUBNAT_BDI_DRAFT,CME Burundi Draft,N/A
+CME_SUBNAT_BEN_DRAFT,CME Benin Draft,N/A
+CME_SUBNAT_BGD_DRAFT,CME Bangladesh Draft,N/A
+CME_SUBNAT_CMR_DRAFT,CME Cameroon Draft,N/A
+CME_SUBNAT_ETH_DRAFT,CME Ethiopia Draft,N/A
+CME_SUBNAT_GHA_DRAFT,CME Ghana Draft,N/A
+CME_SUBNAT_GIN_DRAFT,CME Guinea Draft,N/A
+CME_SUBNAT_HTI_DRAFT,CME Haiti Draft,N/A
+CME_SUBNAT_KEN_DRAFT,CME Kenya Draft,N/A
+CME_SUBNAT_LAO_DRAFT,CME Lao Draft,N/A
+CME_SUBNAT_LBR_DRAFT,CME Liberia Draft,N/A
+CME_SUBNAT_LSO_DRAFT,CME Lesotho Draft,N/A
+CME_SUBNAT_MDG_DRAFT,CME Madagascar Draft,N/A
+CME_SUBNAT_MLI_DRAFT,CME Mali Draft,N/A
+CME_SUBNAT_MMR_DRAFT,CME Myanmar Draft,N/A
+CME_SUBNAT_MRT_DRAFT,CME Mauritania Draft,N/A
+CME_SUBNAT_MWI_DRAFT,CME Malawi Draft,N/A
+CME_SUBNAT_NAM_DRAFT,CME Namibia Draft,N/A
+CME_SUBNAT_NGA_DRAFT,CME Nigeria Draft,N/A
+CME_SUBNAT_NPL_DRAFT,CME Nepal Draft,N/A
+CME_SUBNAT_PAK_DRAFT,CME Pakistan Draft,N/A
+CME_SUBNAT_RWA_DRAFT,CME Rwanda Draft,N/A
+CME_SUBNAT_SEN_DRAFT,CME Senegal Draft,N/A
+CME_SUBNAT_SLE_DRAFT,CME Sierra Leone Draft,N/A
+CME_SUBNAT_TCD_DRAFT,CME Chad Draft,N/A
+CME_SUBNAT_TGO_DRAFT,CME Togo Draft,N/A
+CME_SUBNAT_TZA_DRAFT,CME Tanzania Draft,N/A
+CME_SUBNAT_UGA_DRAFT,CME Uganda Draft,N/A
+CME_SUBNAT_ZMB_DRAFT,CME Zambia Draft,N/A
+CME_SUBNAT_ZWE_DRAFT,CME Zimbabwe Draft,N/A
+CRAVE_2020_1,CRAVE Consultation 2020,N/A
+CRAVE_2021,Crave Consultation 2021,N/A
+CRAVE_2022,Crave Consultation 2022,N/A
+CRAVE_2023,Crave Consultation 2023,N/A
+DRAFT_ECD,[DRAFT] ECD,N/A
+DRAFT_POV,Draft poverty,N/A
+PT_CM_DRAFT,DRAFT PT Child Marriage,N/A
+PT_CM_SUBNATIONAL,Child Marriage - Subnational,N/A
+PT_CM_SUBNATIONAL2,PT Child Marriage Subnat 2,N/A
+PT_DRAFT,PT_DRAFT do not use,A draft dataflow to test data. Do not use
+SDG_CONSULT_2020_1,SDG consultation 2020,N/A
+SDG_CONSULT_2021,SDG Consultation 2021,N/A
+SDG_CONSULT_2022,SDG consultation 2022,N/A
+SDG_CONSULT_2023,SDG consultation 2023,N/A
+SOWC_DATA_SNAPSHOT_2021,SOWC 2021 data snapshot,N/A
+SOWC_DATA_SNAPSHOT_2023,SOWC data snapshot 2023,Taken on 2 Feb 2023
+WASH_HOUSEHOLD_SUBNAT_GIS,Wash Household subnational for GIS visualization,N/A
+LACRO,Latin America and the Caribbean,N/A
+CME_CAUSE_OF_DEATH_TEST,[Test] CME Cause of death,"Test cause of death, delete"
+CME_TEST_COUNTRY_PROFILES_DATA,CME TEST Country profiles,N/A
+CME_TEST_DATAFLOW,Test dataflow,This dataflow is used to test new features
+DHIS_SAMPLE_DATASET,DHIS Sample Dataset,N/A
+DHIS_SAMPLE_DATASET_2,DHIS Sample Dataset 2,N/A
+DP_API_TEST,API test,"Used to test the API crud operations.
+Can be deleted when finished"
+SDG_PROG_ASSESSMENT_TEST,SDG Progress assessment Test,N/A
+UNPD_DEMOGRAPHY,UNPD Demography,Demography data mirrored from UNPD
+UNPD_DM_PROJECTIONS,Projection Demography data mirrored from UNPD,N/A
+WCARO_ECCAS,ECCAS,N/A
+ZIMBABWE_CO,Zimbabwe Country Office,N/A
