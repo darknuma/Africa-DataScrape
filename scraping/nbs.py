@@ -5,8 +5,6 @@ from pydantic import BaseModel, ValidationError
 from typing import List
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -57,14 +55,6 @@ def scrape_page_data(driver) -> List[ScrapedData]:
     return data_list
 
 
-# def go_to_next_page(driver, page_num: int):
-#     base_url = 'https://databank.worldbank.org/databases/page/'
-#     next_page_url = base_url + str(page_num)
-#     driver.get(next_page_url)
-#     time.sleep(4)
-#     logger.info(f"Navigated to page {page_num}")
-
-
 def save_to_csv(data: List[ScrapedData], filename: str):
     with open(filename, 'w', newline='', encoding='utf-8') as output_file:
         writer = csv.DictWriter(output_file, fieldnames=[
@@ -82,7 +72,6 @@ if __name__ == "__main__":
     driver = webdriver.Chrome()
     driver.get('https://nigerianstat.gov.ng/nada/index.php/catalog#_r=&collection=&country=&dtype=&from=1999&page=1&ps=100&sk=&sort_by=titl&sort_order=&to=2023&topic=&view=s&vk=')
 
-    # Wait for user confirmation to start scraping
     input("Press Enter to start scraping...")
 
     all_data = []

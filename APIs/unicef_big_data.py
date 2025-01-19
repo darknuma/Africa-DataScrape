@@ -42,7 +42,6 @@ def fetch_and_save_parquet(target_url):
         # # Convert 'SERIES_YEAR' to string to avoid type conflicts
         # df['SERIES_YEAR'] = df['SERIES_YEAR'].astype(str)
         
-        # Convert all object columns to strings
         for col in df.select_dtypes(include=['object']):
             df[col] = df[col].astype(str)
         

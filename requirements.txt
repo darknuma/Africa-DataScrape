@@ -1,0 +1,9 @@
+black
+selenium
+pandas
+streamlit
+requests
+pyarrow
+duckdb
+pydantic
+tqdm

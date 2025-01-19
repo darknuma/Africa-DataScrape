@@ -8,12 +8,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 
-# Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 def scrape_documents():
-    driver = webdriver.Chrome()  # Make sure you have chromedriver installed and in PATH
+    driver = webdriver.Chrome() 
     base_url = "https://uninfo.org/documents"
     driver.get(base_url)
     
@@ -25,19 +24,16 @@ def scrape_documents():
     while True:
         logger.info("Scraping current page")
 
-        # Wait for the table to load
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, '//*[@id="app"]/div[1]/div/div/div[5]/div/div/table'))
         )
         
-        # Find all rows in the table
         rows = driver.find_elements(By.XPATH, '//*[@id="app"]/div[1]/div/div/div[5]/div/div/table/tbody/tr')
         
         for row in rows:
             try:
-                # Extract data from each cell in the row
                 cells = row.find_elements(By.TAG_NAME, 'td')
-                if len(cells) < 5:  # Ensure there are enough cells in the row
+                if len(cells) < 5: 
                     continue
                 
                 data = {
@@ -54,7 +50,6 @@ def scrape_documents():
                 logger.error(f"Error extracting data from row: {e}")
                 continue
         
-        # Try to go to next page
         try:
             next_button = WebDriverWait(driver, 10).until(
                 EC.element_to_be_clickable((By.XPATH, '//*[@id="app"]/div[1]/div/div/div[5]/div/div/div/div/div[3]/button[2]'))
@@ -75,15 +70,12 @@ def save_to_csv(data: List[dict], filename: str):
             writer.writerow(item)
     logger.info(f"Data saved to {filename}")
 
-# Run the scraper
 logger.info("Starting the scraping process")
 data = scrape_documents()
 
-# Generate a filename with current date and time
 current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
 filename = f"un_info_{current_time}.csv"
 
-# Save the data to CSV
 save_to_csv(data, filename)
 
 logger.info(f"Scraping completed. Total items scraped: {len(data)}")

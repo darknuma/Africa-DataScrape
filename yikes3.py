@@ -7,12 +7,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 
-# Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger()
 
 def setup_driver():
-    # Set up Chrome options
     options = webdriver.ChromeOptions()
     options.add_argument("--headless")  # Run in headless mode (without a GUI)
     options.add_argument("--disable-gpu")  # Disable GPU acceleration
@@ -29,8 +27,6 @@ def fetch_and_parse_data(driver, url):
     try:
         logger.info(f"Connecting to {url}")
         driver.get(url)
-
-        # Wait for the table to load
         try:
             WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, 'ygtvtableel3')))
             logger.info("Table loaded successfully.")
@@ -38,19 +34,13 @@ def fetch_and_parse_data(driver, url):
             logger.error("Timeout while waiting for the table to load.")
             return []
 
-        # Start counter for dynamic IDs
         count = 3  # Starting ID or count
         base_id = 2880  # Base ID for dynamic elements
         
         while True:
             try:
-                # Calculate the dynamic ID //*[@id="ygtv144"]
                 some_id = base_id + 100 * (count - 3)
-                
-                # Construct the selector for mart rows
                 mart_name_selector = f'#ygtvlabelel{count} > span.martName'
-                
-                # Debugging: print the selector to verify
                 print(f"Looking for mart with selector: {mart_name_selector}")
                 
                 mart_name_span = driver.find_element(By.CSS_SELECTOR, mart_name_selector)
@@ -60,14 +50,10 @@ def fetch_and_parse_data(driver, url):
                     logger.info(f"Mart found: {mart_name}")
                 
                 
-                # Check for presence of the children div #ygtvc3
                 parent_div_selector = f'#ygtvc{count}'
                 parent_div = driver.find_element(By.CSS_SELECTOR, parent_div_selector)
 
-                # Locate child elements within the parent div
                 data_rows = parent_div.find_elements(By.CSS_SELECTOR, f'#ygtv{some_id}')
-
-                # Print the outer HTML of each data row for debugging
                 for index, data_row in enumerate(data_rows):
                     logger.info(f"Data row {index} HTML: {data_row.get_attribute('outerHTML')}")
 
@@ -76,14 +62,12 @@ def fetch_and_parse_data(driver, url):
                 
                 for data_row in data_rows:
                     try:
-                        # Extract data from the nested table within this div
                         row_id = data_row.get_attribute('id')  # 'ygtv144', 'ygtv145', etc.
                         table_id = row_id.replace('ygtv', 'ygtvtableel')  # 'ygtvtableel144', 'ygtvtableel145', etc.
 
                         try:
                             data_table = data_row.find_element(By.ID, table_id)
                             
-                            # Find all rows within the nested table
                             rows = data_table.find_elements(By.CSS_SELECTOR, "tr.ygtvrow")
                             
                             for row in rows:
@@ -107,8 +91,6 @@ def fetch_and_parse_data(driver, url):
                     except NoSuchElementException:
                         logger.warning("Data row div not found or not in expected structure.")
                         continue
-
-                # Increment the count to check the next dynamic ID
                 count += 1
 
             except NoSuchElementException:
